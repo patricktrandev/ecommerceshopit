@@ -12,10 +12,12 @@ process.on('uncaughtException', (err) => {
 
 
 // Connecting to database
+
+
+//dotenv.config({ path: 'backend/config/config.env' })
+if (process.env.NODE_ENV !== 'PRODUCTION') require('dotenv').config({ path: 'backend/config/config.env' })
+
 connectDatabase();
-
-dotenv.config({ path: 'backend/config/config.env' })
-
 //set up cloudinary config
 
 cloudinary.config({
