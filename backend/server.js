@@ -10,10 +10,6 @@ process.on('uncaughtException', (err) => {
 })
 //console.log(a); //test uncaught exception
 
-
-// Connecting to database
-
-
 //dotenv.config({ path: 'backend/config/config.env' })
 if (process.env.NODE_ENV !== 'PRODUCTION') require('dotenv').config({ path: 'backend/config/config.env' })
 
