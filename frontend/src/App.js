@@ -120,11 +120,11 @@ function App() {
           <ProtectedRoute exact path='/admin/users' isAdmin={true} component={UserListAdmin} />
           <ProtectedRoute exact path='/admin/user/:id' component={UpdateUserByAdmin} />
           <ProtectedRoute exact path='/admin/reviews' isAdmin={true} component={ProductReviews} />
-          {
+          {/* {
             !loading && (!isAuthenticated || (user && user.role !== 'admin')) && (
               <Footer />
             )
-          }
+          } */}
 
 
 
